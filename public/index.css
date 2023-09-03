@@ -1,0 +1,66 @@
+body{
+    display: grid;
+    justify-content: center;
+    background-color: #d5ebf3;
+    font-family: 'Nunito Sans'
+}
+
+#wrapper{
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 35px 0px;
+    padding: 50px;
+    margin: 100px;
+    display: grid;
+    justify-content: center;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width: 150px;
+}
+
+#title{
+    color: #3e9ec4;
+    font-weight: 800;
+}
+
+h1, h2, h3, p{
+    margin: 0;
+    margin-top: 10px;
+}
+
+#userEmail{
+    margin: 8px 0px;
+}
+
+.btn-primary{
+    margin: 20px;
+    background-color: #3e9ec4;
+    padding: 10px 20px;
+    color: white;
+    font-family: 'Nunito Sans';
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.307) 0px 5px 20px 0px;
+}
+
+.btn-primary:hover{
+    box-shadow: rgba(0, 0, 0, 0.228) 0px 5px 20px 0px;
+    transform: translate(1px, 3px);
+}
+
+#accept{
+    background-color: rgb(101, 198, 101);
+    margin-right: 10px;
+}
+
+#decline{
+    background-color: rgb(239, 80, 80);
+}
+
+#permissionCode{
+    font-size: 20px;
+    font-weight: 1000;
+}

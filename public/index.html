@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cubstart Enrollment Portal</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" type="image/png" href="./logo1.png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+
+  <script type="module" src="./app.js" defer></script>
+</head>
+
+<body>
+  <div id="wrapper">
+  <img src="logo1.png"/>
+  <h1 id="title">Cubstart Enrollment Portal</h1>
+  <div id="userDetails"></div>
+  <p id="userEmail"></p>
+
+  <section id="offer" hidden="true">
+    <div style="display: grid; justify-items: center;">
+      <h3>Would you like to accept your offer and enroll in Cubstart?</h3>
+      <div style="width: 250px; height: 80px;">
+        <button id="accept" class="btn-primary">Accept</button>
+        <button id="decline" class="btn-primary">Decline</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="declined" hidden="true">
+    <div style="display: grid; justify-items: center;">
+      <h3 id="unverified">You have declined your seat in CS 198-075/750. Please reach out to cubstart@calhacks.io if this was a mistake.</h3>
+      <button id="signOutBtn" class="btn-primary">Sign Out</button>
+    </div>
+  </section>
+  
+  <section id="whenSignedOut">
+    <button id="signInBtn" class="btn-primary">Sign in with Google</button>
+  </section>
+
+  <section id="whenSignedIn" hidden="true">
+    <h2>Class Number:</h2>
+    <h3 id="track"></h3>
+    <h2>Your Unique Permission Code:</h2>
+    <h1 id="permissionCode"></h1>
+    <p>Go to CalCentral's Enrollment Center -> Class Search and Enroll -> Enter Class Number -> Enroll using your permission code!</p>
+  </section>
+</div>
+
+</body>
+</html>
